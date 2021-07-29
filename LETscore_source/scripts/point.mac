@@ -1,0 +1,20 @@
+# Macro file for LETscore
+
+/run/initialize
+/control/verbose 2
+/run/verbose 2
+
+/gps/particle proton
+/gps/position 0 0 50 mm
+/gps/pos/type Point
+/gps/ang/type iso
+/gps/ene/type Gauss
+/gps/ene/mono 150 MeV
+/gps/ene/sigma 0 MeV
+#/process/inactivate msc
+#/process/inactivate protonInelastic
+#/process/inactivate hBrems
+#/process/inactivate CoulombScat
+#/process/inactivate hPairProd
+
+/run/beamOn 1000000

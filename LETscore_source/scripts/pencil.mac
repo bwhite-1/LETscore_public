@@ -1,0 +1,29 @@
+# Macro file for LETscore
+
+/run/initialize
+/control/verbose 2
+/run/verbose 2
+
+/gps/particle proton
+/gps/direction 0 0 1
+/gps/position 0 0 0
+/gps/pos/type Beam
+/gps/pos/sigma_x 0.872 cm
+/gps/pos/sigma_y 0.872 cm
+/gps/ang/sigma_x 0.0032 rad
+/gps/ang/sigma_y 0.0032 rad
+
+
+#Gaussian
+/gps/ene/type Gauss
+/gps/ene/mono 150 MeV
+/gps/ene/sigma 1.5 MeV
+
+#Linear
+#/gps/ene/type Lin
+#/gps/ene/min 100 MeV
+#/gps/ene/max 200 MeV
+#/gps/ene/gradient 0 
+#/gps/ene/intercept 1
+
+/run/beamOn 10000
